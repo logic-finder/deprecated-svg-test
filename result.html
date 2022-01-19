@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Result</title>
+    <style>
+      h1 {
+        font-size: 20px;
+      }
+      
+      h2 {
+        font-size: 15px;
+      }
+
+      img {
+        outline: 1px solid black;
+      }
+
+      figcaption {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>1. &lt;rect&gt; 요소 5000개 / 5000 &lt;rect&gt; elements</h1>
+    <h2>1.1. setAttribute('x', value) 사용하기 / Using setAttribute('x', value)</h2>
+    <figure>
+      <img src="first_three_trial_1_1.png">
+      <figcaption>1.1의 첫 3회 시행 / first three trial of 1.1</figcaption>
+    </figure>
+    <p>시행 횟수: 30 / number of trials: 30</p>
+    <p>평균 렌더링 소요 시간 / average rendering time taken</p>
+    <p>= (100 + 106 + 104 + 108 + 111 + 105 + 111 + 110 + 106 + 107) / 10 = 106.8 초(sec.)</p>
+    <h2>1.2. setAttribute('transform', 'translate(x)') 사용하기 / Using setAttribute('transform', 'translate(x)')</h2>
+    <figure>
+      <img src="first_three_trial_1_2.png">
+      <figcaption>1.2의 첫 3회 시행 / first three trial of 1.2</figcaption>
+    </figure>
+    <p>시행 횟수: 30 / number of trials: 30</p>
+    <p>평균 렌더링 소요 시간 / average rendering time taken</p>
+    <p> = (171 + 181 + 165 + 169 + 161 + 168 + 165 + 175 + 164 + 160) / 10 = 167.9 초(sec.)</p>
+    <h1>2. &lt;svg&gt; 요소 5000개 / 5000 &lt;svg&gt; elements</h1>
+    <figure>
+      <img src="first_three_trial_2.png">
+      <figcaption>2의 첫 3회 시행 / first three trial of 2</figcaption>
+    </figure>
+    <p>시행 횟수: 30 / number of trials: 30</p>
+    <p>평균 렌더링 소요 시간 / average rendering time taken</p>
+    <p> = (185 + 192 + 195 + 187 + 194 + 194 + 199 + 205 + 194 + 226) / 10 = 197.1 초(sec.)</p>
+  </body>
+</html>
